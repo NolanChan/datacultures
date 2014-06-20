@@ -1,4 +1,3 @@
-console.log(1);
 (function(win, angular) {
 
   'use strict';
@@ -6,7 +5,7 @@ console.log(1);
   /**
    * Initialize all of the submodules
    */
-  // angular.module('datacultures.config', ['ngRoute']);
+  angular.module('datacultures.config', ['ngRoute']);
   angular.module('datacultures.controllers', []);
   // angular.module('datacultures.directives', []);
   // angular.module('datacultures.factories', []);
@@ -17,7 +16,7 @@ console.log(1);
    * datacultures module
    */
   var datacultures = angular.module('datacultures', [
-    // 'datacultures.config',
+    'datacultures.config',
     'datacultures.controllers',
     // 'datacultures.directives',
     // 'datacultures.factories',
