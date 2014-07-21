@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/users/:course_id' => 'canvas_lti#students_list', :defaults => { :format => 'json'}
   get '/canvas/lti_points_configuration' => 'canvas_lti#lti_points_configuration', :defaults => { :format => 'xml'}
 
+  get '/api/engagement_index/data' => 'engagement_index#index', :defaults => { :format => 'json'}
   namespace :api do
     namespace :v1 do
       resources :activities, only: [:index, :show, :create, :update]

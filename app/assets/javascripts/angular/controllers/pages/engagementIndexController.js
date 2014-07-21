@@ -9,7 +9,7 @@
 
         // Default Sort
         $scope.predicate = 'position';
-    });
+      });
   });
 
 })(window.angular);
