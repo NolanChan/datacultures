@@ -9,6 +9,10 @@ class Api::V1::ActivitiesController < ApplicationController
   def index
     # to do scope to user
     @activities = Activity.all
+    respond_to do |format|
+      format.csv {render text: @activities.to_csv}
+      format.json {render json: @activities}
+    end
   end
 
   def show
