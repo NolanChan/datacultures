@@ -1,0 +1,98 @@
+/* BODY */
+.dc-engagement-index-landing-page {
+  h2, h3 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+  .dc-btn-primary {
+    @include background(linear-gradient(to bottom, #0abeff, #0a95ff));
+    background-color: #0aaeff;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+  .dc-btn-info {
+    @include background(linear-gradient(#5bc0de, #2596b8));
+    background-color: #46b0cf;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+  .dc-engagement-search {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-left: 50px;
+    padding: 4px 6px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    vertical-align: middle;
+    width: 186px;
+
+      &:focus {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+      }
+  }
+  .dc-header-color {
+    background: none repeat scroll 0 0 #e4e9ed;
+  }
+  .dc-header-title {
+    border-bottom: 1px solid #dddddd;
+  }
+  .dc-main {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .dc-note {
+    margin-top: 50px;
+  }
+  .dc-screenshot {
+    border: 1px solid #F1F1F1;
+    height: 300px;
+    width: 450px;
+  }
+  .dc-screenshots {
+    padding-top: 50px;
+  }
+  .dc-select-share {
+    clear: both;
+    padding-top:50px;
+  }
+  .dc-share-screenshot {
+    float: left;
+  }
+  .dc-sort-controls {
+    margin-bottom: -25px;
+    margin-top: 80px;
+  }
+  .dc-table-striped-border {
+    border: 1px solid #dddddd;
+  }
+  .dc-table-margin {
+    margin-top: 50px;
+  }
+  .dc-unshare-screenshot {
+    float: left;
+    padding-left: 155px;
+  }
+}

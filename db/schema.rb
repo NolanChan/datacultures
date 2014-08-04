@@ -11,20 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709180725) do
+ActiveRecord::Schema.define(version: 20140722171701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "activities", force: true do |t|
-    t.string   "uid",        null: false
-    t.string   "reason",     null: false
-    t.integer  "delta",      null: false
+    t.string   "reason",                 null: false
+    t.integer  "delta",                  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "deleted_at"
+    t.integer  "canvas_user_id",         null: false
+    t.integer  "canvas_scoring_item_id", null: false
+    t.datetime "canvas_updated_at"
+    t.text     "body"
   end
 
+  add_index "activities", ["canvas_scoring_item_id", "reason"], name: "index_activities_on_canvas_scoring_item_id_and_reason", using: :btree
   add_index "activities", ["deleted_at"], name: "index_activities_on_deleted_at", using: :btree
+
+  create_table "points_configurations", force: true do |t|
+    t.string   "pcid",                             null: false
+    t.string   "interaction",                      null: false
+    t.integer  "points_associated",                null: false
+    t.boolean  "active",            default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "students", force: true do |t|
+    t.integer  "canvas_user_id",                 null: false
+    t.string   "name",                           null: false
+    t.string   "sortable_name",                  null: false
+    t.integer  "sis_user_id",                    null: false
+    t.string   "primary_email"
+    t.string   "section",                        null: false
+    t.boolean  "share",          default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

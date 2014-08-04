@@ -1,0 +1,38 @@
+<div data-ng-cloak data-ng-controller="EngagementIndexLandingPageController" class="dc-engagement-index-landing-page">
+
+  <div class="dc-main">
+
+    <h2>Engagement Index</h2>
+
+    <!-- Engagement Index Description -->
+    <div class="dc-description">
+      <p>
+        The engagement index is a scoreboard that lists the names and scores of all the students taking this course. You have the option to share your score engagement below. It is important to note that your decision to share or not share your score will determine how the engagement index will look. Below are examples of how the engagement index will look like in both a shared and unshared view:
+      </p>
+    </div> <!-- End of dc-description -->
+
+    <!-- Screenshot examples of Share and Not Share Views -->
+    <div class="dc-screenshots">
+      <div class="dc-share-screenshot">
+        <h3>Shared View</h3>
+        <img class="dc-screenshot" src="http://cl.ly/image/3G241g010H3t/engagement_index_share.png"/>
+      </div>
+      <div class="dc-unshare-screenshot">
+        <h3>Unshared View</h3>
+        <img class="dc-screenshot" src="http://cl.ly/image/0L1F2m0Z2i3T/engagement_index_not_share.png"/>
+      </div>
+    </div> <!-- End of dc-screenshots -->
+
+    <!-- Select share or not share -->
+    <div class="dc-select-share">
+     <form>
+        <div>
+          <input type="radio" data-ng-model="score" value="yes"> Yes, I want to share my score on the Engagement Index.<br />
+          <input type="radio" data-ng-model="score" value="no"> No, I do not want to share my score on the Engagement Index.<br />
+          <a data-ng-href="{{redirectPage()}}" class="btn dc-btn-primary" type="button">Save</a>
+        </div>
+      </form>
+    </div><!-- End of dc-select-share -->
+
+  </div><!-- End of main div -->
+</div><!-- End of dc-engagement-index-landing-page -->
