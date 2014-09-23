@@ -1,9 +1,8 @@
 .dc-gallery{
   body {
     color: #777;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 0.9em;
-    font-weight: 300;
+    // font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.8em;
     overflow-x: hidden;
   }
   .dc-gallery-container {
@@ -91,57 +90,58 @@
 
   /* THUMBNAIL */
 
-  .dc-thumbnail-caption {
-    font-size: 0.8em;
-    margin-top: 3px;
-    position: relative;
-    text-align: center;
-    width: 200px;
-  }
-  .dc-thumbnail-image {
-    background: #fcfcfc;
-    border: 1px solid #eaeaea;
-    float: left;
-    margin: 8px;
-    padding: 2px;
-  }
-  .dc-thumbnail-hover {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .dc-thumbnail-hover li {
-    display: inline-block;
-    height: auto;
-    position: relative;
-  }
-  .dc-thumbnail-hover li:hover .dc-thumbnail-hover-caption {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0,0,0,0.7);
-  }
-  .dc-thumbnail-hover-caption {
-    background-color: rgba(0,0,0,0);
-    bottom: 3px;
-    color: rgba(255, 255, 255, 0);
-    height: 50px;
-    margin-left: 0px;
-    overflow: hidden;
-    position: absolute;
-    width: 200px;
-    -webkit-transition: background-color, color 500ms;
-    -moz-transition: background-color, color 500ms;
-    -o-transition: background-color, color 500ms;
-    transition: background-color, color 500ms;
-  }
-  .dc-thumbnail-hover-caption p {
-    font-size: 0.8em;
-    margin-left: 10px;
-    opacity: 100;
-    top: 10px;
-  }
-  .dc-thumbnail-video {
-    opacity: 0.7;
-  }
+
+.dc-thumbnail-caption {
+  font-size: 0.9em;
+  margin-top: 3px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+}
+.dc-thumbnail-image {
+  background: #fcfcfc;
+  border: 1px solid #eaeaea;
+  float: left;
+  margin: 8px;
+  padding: 2px;
+}
+.dc-thumbnail-hover {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.dc-thumbnail-hover li {
+  display: inline-block;
+  height: auto;
+  position: relative;
+}
+.dc-thumbnail-hover li:hover .dc-thumbnail-hover-caption {
+  color: rgba(240, 240, 240, 1);
+  background-color: rgba(10, 88, 129, 1);
+}
+.dc-thumbnail-hover-caption {
+  background-color: rgba(10, 88, 129, 0);
+  bottom: 0px;
+  color: rgba(240, 240, 240, 0);
+  height: 50px;
+  margin-left: 0px;
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+.dc-thumbnail-hover-caption p {
+  font-size: 0.9em;
+  opacity: 100;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.dc-thumbnail-video {
+  opacity: 0.7;
+}
 
   /* FULL VIEW LAYOUT */
 
